@@ -3,19 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script src="analytics-config.js"></script>
-<script src="analytics.js"></script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9WTT96S3EH"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9WTT96S3EH');
+</script>
+
 <title>Pedro Parada — Software Engineer | Data Engineering & Backend</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="description" content="Portfolio de Pedro Parada, Software Engineer con experiencia en Data Engineering, Backend, APIs, ETL y desarrollo de software empresarial.">
 <meta property="og:title" content="Pedro Parada — Software Engineer | Data Engineering & Backend">
 <meta property="og:description" content="Software Engineer con experiencia profesional en JPMorgan Chase. Backend, Data Engineering, APIs y arquitectura.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#101826">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 <a href="#main" class="skip-link">Saltar al contenido</a>
 
@@ -85,15 +97,6 @@
     </svg>
   </div>
 </section>
-
-<!-- SOBRE MÍ -->
-<section id="sobre-mi" class="section reveal">
-  <div class="container">
-    <div class="section-head"><h2>Sobre mí</h2></div>
-    <p class="exp-desc">Software Engineer orientado al desarrollo de sistemas y soluciones de datos. Mi experiencia combina backend, APIs, ETL y aplicaciones internas, con especial interés en la intersección entre ingeniería de software, datos y arquitectura. Actualmente continúo desarrollando mi perfil hacia sistemas data-intensive y aplicaciones basadas en IA.</p>
-  </div>
-</section>
-
 <!-- EXPERIENCIA -->
 <section id="experiencia" class="section reveal">
   <div class="container">
@@ -189,8 +192,10 @@
             <div class="cat">Data Engineering · Data Modeling · Analytics</div>
           </div>
         </div>
-        <p class="desc">Pipeline de datos orientado al análisis de historial de reproducción, desde la extracción y transformación de datos hasta el modelado analítico y la visualización interactiva.</p>
-        <div class="project-body">
+        <p class="desc">Data product end-to-end construido sobre mi propio historial de reproducción: desde la extracción del export crudo de Spotify 
+          hasta un modelo dimensional en Parquet, enriquecido con geolocalización real de las IPs registradas, con más de 95% de cobertura de tests 
+          y una capa de exploración interactiva que ejecuta SQL directamente en el navegador.</p>        
+          <div class="project-body">
           <div class="flow">
             <span class="step">Raw Data</span><span class="arrow" aria-hidden="true">↓</span>
             <span class="step">Python / Pandas</span><span class="arrow" aria-hidden="true">↓</span>
@@ -250,7 +255,7 @@
       <div class="stack-cat">
         <h3>Data Engineering</h3>
         <div class="chips">
-          <span class="chip">Pentaho</span><span class="chip">Alteryx</span><span class="chip">Parquet</span>
+          <span class="chip">Pentaho</span><span class="chip">Alteryx</span><span class="chip">Apache Kafka</span><span class="chip">Big Query</span>
           <span class="chip">Data Modeling</span><span class="chip">NumPy</span>
         </div>
       </div>
@@ -258,7 +263,7 @@
         <h3>Backend</h3>
         <div class="chips">
           <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">REST APIs</span>
-          <span class="chip">Java</span><span class="chip">Spring Boot</span>
+          <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Postman/Bruno</span>
         </div>
       </div>
       <div class="stack-cat">
@@ -303,10 +308,12 @@
         <div class="cert-item"><div class="name">Google Data Analytics</div><div class="meta">Google · Feb. 2026</div></div>
         <div class="cert-item"><div class="name">Docker</div><div class="meta">Udemy · Jun. 2026</div></div>        <div class="cert-item"><div class="name">CI/CD DevOps</div><div class="meta">Udemy · Jul. 2026</div></div>
         <div class="cert-item"><div class="name">Claude Code 101</div><div class="meta">Anthropic · Abr. 2026</div></div>
-        <div class="cert-item"><div class="name">Fundamentos de Alteryx</div><div class="meta">DataCamp · Oct. 2025</div></div>
+        <div class="cert-item"><div class="name">Desarrollador Full Stack Java</div><div class="meta">Skillnest · abr. 2025</div></div>
+        <div class="cert-item"><div class="name">Machine learning with Python</div><div class="meta">U. de chile · sep. 2026</div></div>
+        <div class="cert-item"><div class="name">AI Fundamentals</div><div class="meta">Google · aug. 2025</div></div>
       </div>
 
-      <p class="certs-more-link">21+ certificaciones y credenciales técnicas · <a href="https://linkedin.com/in/pedro-parada" target="_blank" rel="noopener noreferrer" class="link-accent" data-track="linkedin_click">Ver perfil completo en LinkedIn →</a></p>
+      <p class="certs-more-link">21+ certificaciones y credenciales técnicas · <a href="https://www.linkedin.com/in/pedro-parada/details/certifications/" target="_blank" rel="noopener noreferrer" class="link-accent" data-track="linkedin_click">Ver perfil completo en LinkedIn →</a></p>
     </div>
   </div>
 </section>

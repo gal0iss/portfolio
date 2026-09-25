@@ -71,12 +71,6 @@ function initScrollReveal() {
 
   targets.forEach((el) => observer.observe(el));
 }
-
-/**
- * Analytics — GA_ID is injected outside this file, never hardcoded here.
- * Recommended events: cv_download, cv_preview, project_demo_click,
- * github_click, linkedin_click, contact_submit.
- */
 function track(eventName) {
   if (typeof window.gtag === 'function') {
     window.gtag('event', eventName);
