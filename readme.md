@@ -8,7 +8,7 @@ HTML, CSS y JS planos, sin build ni framework.
 
 ## Estructura
 
-- `index.html` — contenido - Contiene Google Analytics por viewer & event-
+- `index.html` — contenido 
 - `styles.css` — estilos
 - `script.js` — menú, scroll-spy, tracking de eventos
-- `PedroParadaCV.pdf` — CV real (agregar manualmente, no está en el repo)
+- `PedroParadaCV.pdf` — CV real 
